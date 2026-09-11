@@ -1,0 +1,199 @@
+/* =========================================
+   PREMIER POOL SERVICES OF MICHIGAN
+   Main Website Styles
+   ========================================= */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ---------- COLORS ---------- */
+
+:root {
+    --blue: #07558c;
+    --dark-blue: #063b63;
+    --black: #111111;
+    --dark-gray: #222222;
+    --light-gray: #f2f4f5;
+    --white: #ffffff;
+}
+
+
+/* ---------- GENERAL ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-label {
+    color: var(--blue);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    background: var(--white);
+    border-bottom: 4px solid var(--blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo span {
+    color: var(--blue);
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo small {
+    color: var(--black);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 650px;
+    position: relative;
+
+    /*
+       Temporary background.
+       We can replace this with YOUR pool photo later.
+    */
+
+    background:
+        linear-gradient(
+            rgba(0, 25, 45, 0.72),
+            rgba(0, 25, 45, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 20, 35, 0.8),
+        rgba(0, 40, 70, 0.35)
+    );
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -2px;
+    max-width: 850px;
+}
+
+.hero h1 span {
+    color: #58b8ee;
+}
+
+.hero-text {
+    max-width: 620px;
+    margin-top: 25px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top
