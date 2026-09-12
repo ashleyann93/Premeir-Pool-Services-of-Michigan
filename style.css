@@ -2909,3 +2909,70 @@ nav {
         font-size: clamp(2.9rem, 11.5vw, 4rem);
     }
 }
+/* =========================================================
+   FINAL HERO PROPORTIONS
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+    /* Move the entire hero text slightly upward */
+    .hero-content {
+        padding-top: 32px !important;
+        padding-left: 38px !important;
+    }
+
+    /* Make the main headline noticeably smaller */
+    .hero h1 {
+        max-width: 570px !important;
+        font-size: 5.7rem !important;
+        line-height: 0.82 !important;
+        transform: none !important;
+    }
+
+    /* Keep POOL CARE from stretching too far across the photo */
+    .hero h1 span {
+        display: inline-block;
+        margin-top: 3px !important;
+    }
+
+    /* Slightly reduce Done Right */
+    .hero-tagline {
+        font-size: 4.2rem !important;
+        margin-top: 4px !important;
+        margin-bottom: 17px !important;
+        transform: rotate(-3deg) !important;
+    }
+
+    /* Keep description under the headline */
+    .hero .hero-text {
+        max-width: 525px !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Keep buttons close to the text */
+    .hero-buttons {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .hero-content {
+        padding-top: 95px !important;
+    }
+
+    .hero h1 {
+        font-size: 4.2rem !important;
+        line-height: 0.82 !important;
+    }
+
+    .hero-tagline {
+        font-size: 3.3rem !important;
+    }
+}
