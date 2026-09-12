@@ -1516,3 +1516,366 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* =========================================
+   PREMIUM PREMIER HERO
+   ========================================= */
+
+.hero {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+
+    background-image: url("HERO.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Dark cinematic overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 13, 20, 0.96) 0%,
+            rgba(3, 13, 20, 0.84) 25%,
+            rgba(3, 13, 20, 0.48) 52%,
+            rgba(3, 13, 20, 0.12) 100%
+        );
+}
+
+/* Adds a subtle dark fade at the bottom */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    background: linear-gradient(
+        0deg,
+        rgba(3, 13, 20, 0.45) 0%,
+        transparent 35%
+    );
+}
+
+/* Main hero content */
+.hero-content {
+    position: relative;
+    z-index: 4;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 110px 30px 95px;
+}
+
+/* Location line */
+.hero .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero .eyebrow::before {
+    content: "";
+
+    width: 42px;
+    height: 3px;
+
+    background: #58d7f5;
+    flex-shrink: 0;
+}
+
+/* Main headline */
+.hero h1 {
+    max-width: 720px;
+
+    margin: 0;
+
+    font-family: "Oswald", Impact, sans-serif;
+    font-size: clamp(4.8rem, 8vw, 8rem);
+    font-weight: 800;
+    line-height: 0.82;
+    letter-spacing: -0.035em;
+
+    text-transform: uppercase;
+
+    color: #f7f1df;
+
+    text-shadow:
+        3px 4px 0 rgba(0, 0, 0, 0.22),
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Blue portion of headline */
+.hero h1 span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #58d7f5;
+}
+
+/* Description */
+.hero .hero-text {
+    max-width: 620px;
+
+    margin: 32px 0 30px;
+
+    color: #ffffff;
+
+    font-size: 1.03rem;
+    line-height: 1.65;
+    font-weight: 500;
+
+    text-shadow:
+        1px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    min-height: 56px;
+
+    padding: 15px 27px;
+
+    font-family: "Oswald", Impact, sans-serif;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    transition: all 0.25s ease;
+}
+
+/* Estimate button */
+.hero-buttons .btn-primary {
+    background: #58d7f5;
+    color: #07141d;
+
+    border: 2px solid #58d7f5;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.28);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+/* Phone button */
+.hero-buttons .btn-secondary {
+    background: rgba(3, 13, 20, 0.55);
+
+    color: #ffffff;
+
+    border: 2px solid #58d7f5;
+
+    backdrop-filter: blur(4px);
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: #58d7f5;
+    color: #07141d;
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   FAMILY OWNED BADGE
+   ========================================= */
+
+.hero-badge {
+    position: absolute;
+
+    top: 85px;
+    right: 7%;
+
+    z-index: 5;
+
+    width: 150px;
+    height: 150px;
+
+    border: 3px solid #f7f1df;
+    border-radius: 50%;
+
+    background: rgba(3, 13, 20, 0.78);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: #f7f1df;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 5px rgba(88, 215, 245, 0.12);
+}
+
+.hero-badge::before {
+    content: "";
+
+    position: absolute;
+
+    width: 128px;
+    height: 128px;
+
+    border: 1px dashed rgba(88, 215, 245, 0.6);
+
+    border-radius: 50%;
+}
+
+.hero-badge span {
+    position: relative;
+    z-index: 2;
+
+    font-size: 0.57rem;
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+.hero-badge strong {
+    position: relative;
+    z-index: 2;
+
+    margin: 8px 0;
+
+    color: #58d7f5;
+
+    font-family: "Oswald", Impact, sans-serif;
+    font-size: 1.35rem;
+
+    letter-spacing: 0.08em;
+}
+
+/* =========================================
+   MOBILE HERO
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 760px;
+
+        background-position: 65% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3, 13, 20, 0.97) 0%,
+                rgba(3, 13, 20, 0.88) 45%,
+                rgba(3, 13, 20, 0.48) 100%
+            );
+    }
+
+    .hero-content {
+        padding: 105px 22px 70px;
+    }
+
+    .hero .eyebrow {
+        max-width: 330px;
+
+        margin-bottom: 22px;
+
+        font-size: 0.65rem;
+        line-height: 1.5;
+
+        letter-spacing: 0.12em;
+    }
+
+    .hero .eyebrow::before {
+        width: 25px;
+        height: 2px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(3.6rem, 16vw, 5.5rem);
+
+        line-height: 0.86;
+    }
+
+    .hero h1 span {
+        margin-top: 5px;
+    }
+
+    .hero .hero-text {
+        max-width: 100%;
+
+        margin-top: 27px;
+
+        font-size: 0.96rem;
+        line-height: 1.55;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-badge {
+        top: 24px;
+        right: 18px;
+
+        width: 94px;
+        height: 94px;
+
+        border-width: 2px;
+    }
+
+    .hero-badge::before {
+        width: 78px;
+        height: 78px;
+    }
+
+    .hero-badge span {
+        font-size: 0.35rem;
+    }
+
+    .hero-badge strong {
+        margin: 4px 0;
+
+        font-size: 0.78rem;
+    }
+}
