@@ -84,14 +84,14 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    width: 190px;
-    height: 90px;
+    width: 230px;
+    height: 105px;
     overflow: hidden;
 }
 
 .logo img {
-    width: 190px;
-    height: 90px;
+    width: 230px;
+    height: 105px;
     object-fit: contain;
     display: block;
 }
@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 .nav-container {
-    min-height: 85px;
+    min-height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
