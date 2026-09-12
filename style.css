@@ -3102,3 +3102,47 @@ nav {
         min-height: 115px !important;
     }
 }
+/* =========================================================
+   FIX LARGE LOGO + BRUSH CLIPPING
+   ========================================================= */
+
+/* Allow the larger logo to extend fully */
+@media (min-width: 801px) {
+
+    header,
+    .navbar {
+        min-height: 155px !important;
+        height: 155px !important;
+        overflow: visible !important;
+    }
+
+    header img,
+    .logo img,
+    .navbar img,
+    .navbar-brand img {
+        height: 150px !important;
+        max-height: none !important;
+        width: auto !important;
+        object-fit: contain;
+        position: relative;
+        z-index: 50;
+        transform: translateY(5px);
+    }
+
+    /* Keep the navigation vertically centered */
+    nav {
+        position: relative;
+        z-index: 60;
+    }
+}
+
+
+/* Keep the turquoise brush completely visible */
+.hero {
+    overflow: visible !important;
+}
+
+.hero-brush {
+    top: 12px !important;
+    z-index: 30 !important;
+}
