@@ -2330,3 +2330,31 @@ nav a {
         margin-top: 0;
     }
 }
+/* FINAL HERO POSITIONING */
+
+@media (min-width: 801px) {
+
+    .hero-content {
+        padding-left: 35px;
+        padding-top: 70px;
+        padding-bottom: 65px;
+    }
+
+    .hero h1 {
+        transform: translateY(-8px);
+    }
+
+    .hero-tagline {
+        margin-top: 6px;
+        margin-bottom: 22px;
+        transform: translateY(-6px) rotate(-2deg);
+    }
+
+    .hero .hero-text {
+        margin-top: 0;
+    }
+
+    .hero-buttons {
+        margin-top: 4px;
+    }
+}
