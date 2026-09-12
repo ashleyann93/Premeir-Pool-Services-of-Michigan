@@ -536,3 +536,23 @@ nav a:hover {
         max-width: 300px;
     }
 }
+/* CONTACT BUTTON POLISH */
+
+.contact .btn-primary {
+    background: #1f6fa8;
+    color: #ffffff;
+    border: 2px solid #1f6fa8;
+}
+
+.contact .btn-secondary {
+    background: transparent;
+    color: #1f6fa8;
+    border: 2px solid #1f6fa8;
+}
+
+.contact .btn-primary:hover,
+.contact .btn-secondary:hover {
+    background: #58b8ee;
+    color: #111111;
+    border-color: #58b8ee;
+}
