@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
 /* =========================================
    PREMIER POOL SERVICES OF MICHIGAN
    Main Website Styles
@@ -895,4 +897,77 @@ footer {
         color: #ffffff;
     }
 
+}
+/* =========================================
+   PREMIER CUSTOM BRAND STYLE
+   ========================================= */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Stronger branded headings */
+h1,
+h2,
+h3,
+.section-label,
+.section-kicker,
+nav a,
+.service-card strong,
+.value strong {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navigation */
+nav a {
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+/* Hero headline */
+.hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+}
+
+/* Section headings */
+.intro h2,
+.section-heading h2,
+.why-us h2,
+.contact h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+}
+
+/* Small branded labels */
+.section-label,
+.eyebrow {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+/* Service cards */
+.service-card strong {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Why Premier boxes */
+.value strong {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+/* Contact buttons */
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.07em;
 }
