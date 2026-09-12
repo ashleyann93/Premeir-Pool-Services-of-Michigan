@@ -1509,3 +1509,10 @@ nav a {
         letter-spacing: 0.08em;
     }
 }
+/* HERO BACKGROUND IMAGE */
+.hero {
+    background-image: url("HERO.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
