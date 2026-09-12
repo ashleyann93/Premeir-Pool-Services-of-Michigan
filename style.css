@@ -264,3 +264,106 @@ nav a:hover {
       text-align: center;
    }
 }
+/* ================================
+   PREMIER POOL SERVICES
+   SERVICES SECTION
+================================ */
+
+.services-section {
+    background: #f4f4f2;
+    padding: 90px 20px;
+    color: #111111;
+}
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-kicker {
+    color: #07558c;
+    font-size: 0.85rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+    margin: 0 0 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.service-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #111111;
+    color: #ffffff;
+    padding: 38px 30px;
+    border-top: 6px solid #58b8ee;
+    min-height: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-number {
+    color: #58b8ee;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 0 0 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    color: #eeeeee;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .services-section {
+        padding: 70px 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+}
