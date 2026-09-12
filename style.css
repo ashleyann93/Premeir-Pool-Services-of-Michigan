@@ -3018,3 +3018,45 @@ nav {
         margin-left: 0 !important;
     }
 }
+/* =========================================================
+   EXTRA LARGE HEADER LOGO — 110px
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+    header img,
+    .logo img,
+    .navbar img,
+    .navbar-brand img {
+        height: 110px !important;
+        width: auto !important;
+        max-height: 110px !important;
+        object-fit: contain;
+    }
+
+    header,
+    .navbar {
+        min-height: 125px !important;
+    }
+}
+
+
+/* Mobile logo */
+
+@media (max-width: 800px) {
+
+    header img,
+    .logo img,
+    .navbar img,
+    .navbar-brand img {
+        height: 80px !important;
+        width: auto !important;
+        max-height: 80px !important;
+        object-fit: contain;
+    }
+
+    header,
+    .navbar {
+        min-height: 95px !important;
+    }
+}
