@@ -556,3 +556,60 @@ nav a:hover {
     color: #111111;
     border-color: #58b8ee;
 }
+/* FOOTER */
+
+footer {
+    background: #0b0f12;
+    color: #ffffff;
+    padding: 45px 20px 20px;
+    border-top: 4px solid #58b8ee;
+}
+
+.footer-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-content strong {
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #cccccc;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.copyright {
+    max-width: 1150px;
+    margin: 30px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid #2b3338;
+    color: #888888;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    footer {
+        padding: 40px 20px 18px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-top: 25px;
+    }
+}
