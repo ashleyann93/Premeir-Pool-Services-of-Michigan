@@ -2528,3 +2528,237 @@ nav a {
         height: 92px;
     }
 }
+/* =========================================================
+   FINAL REFERENCE-STYLE HERO REFINEMENT
+   ========================================================= */
+
+/* --- Slimmer header --- */
+
+header {
+    min-height: 95px;
+}
+
+header img,
+.logo img {
+    max-height: 78px;
+    width: auto;
+}
+
+nav {
+    padding-top: 0;
+}
+
+
+/* --- Hero positioning --- */
+
+@media (min-width: 801px) {
+
+    .hero {
+        min-height: 675px;
+        background-position: center center;
+    }
+
+    .hero-content {
+        max-width: 1280px;
+        padding-top: 58px;
+        padding-left: 38px;
+        padding-right: 40px;
+        padding-bottom: 55px;
+    }
+
+    .hero h1 {
+        max-width: 680px;
+        font-size: clamp(5rem, 7.5vw, 7.8rem);
+        line-height: 0.78;
+        transform: translateY(-4px);
+    }
+
+    .hero-tagline {
+        margin-top: 4px;
+        margin-bottom: 19px;
+        font-size: clamp(3.8rem, 5.3vw, 5.4rem);
+        line-height: 0.88;
+        transform: rotate(-3deg);
+    }
+
+    .hero .hero-text {
+        max-width: 590px;
+        margin-top: 0;
+        margin-bottom: 23px;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        min-height: 58px;
+        padding: 15px 25px;
+    }
+
+    /* Move badge slightly inward */
+    .hero-badge {
+        top: 105px;
+        right: 7%;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Brush graphic */
+    .hero-brush {
+        width: 315px;
+        height: 100px;
+        top: 0;
+        right: 0;
+    }
+
+    .hero-brush span {
+        font-size: 1.85rem;
+    }
+}
+
+
+/* --- Make the service bar look more like the reference --- */
+
+.hero-services {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    min-height: 82px;
+    background: rgba(3, 13, 21, 0.96);
+    border-top: 1px solid rgba(88, 215, 245, 0.35);
+    position: relative;
+    z-index: 10;
+}
+
+.hero-service {
+    flex: 1;
+    max-width: 270px;
+    min-height: 82px;
+    padding: 15px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+    text-align: center;
+}
+
+.hero-service:last-child {
+    border-right: none;
+}
+
+.hero-service-icon {
+    color: #58d7f5;
+    font-size: 1rem;
+}
+
+.hero-service strong,
+.hero-service small {
+    display: block;
+}
+
+.hero-service strong {
+    color: #f7f1df;
+    font-family: "Anton", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+}
+
+.hero-service small {
+    color: #f7f1df;
+    font-family: "Anton", sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+}
+
+
+/* --- Add the fourth reference-style service item --- */
+
+.hero-services::after {
+    content: "✦ CLEANER POOLS • HAPPIER DAYS";
+    flex: 1;
+    max-width: 270px;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    color: #f7f1df;
+    font-family: "Satisfy", cursive;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+
+/* --- Mobile version --- */
+
+@media (max-width: 800px) {
+
+    header {
+        min-height: 82px;
+    }
+
+    header img,
+    .logo img {
+        max-height: 65px;
+    }
+
+    .hero {
+        min-height: 780px;
+    }
+
+    .hero-content {
+        padding: 105px 22px 55px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.8rem, 16vw, 5.4rem);
+        line-height: 0.8;
+    }
+
+    .hero-tagline {
+        font-size: clamp(3rem, 12vw, 4.2rem);
+        margin-top: 7px;
+        margin-bottom: 18px;
+    }
+
+    .hero-brush {
+        width: 185px;
+        height: 72px;
+    }
+
+    .hero-brush span {
+        font-size: 1.1rem;
+    }
+
+    .hero-badge {
+        top: 80px;
+        right: 15px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .hero-services {
+        flex-wrap: wrap;
+    }
+
+    .hero-service {
+        flex: 1 1 50%;
+        max-width: 50%;
+        min-height: 65px;
+        padding: 10px 6px;
+    }
+
+    .hero-services::after {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-height: 65px;
+        padding: 10px;
+        font-size: 1.05rem;
+    }
+}
