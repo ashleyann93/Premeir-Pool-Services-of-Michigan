@@ -2995,3 +2995,26 @@ nav {
         margin-left: 0 !important;
     }
 }
+/* =========================================================
+   CLOSE LEFT GAP IN HERO
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+    .hero-content {
+        max-width: none !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 25px !important;
+    }
+
+    .hero .eyebrow,
+    .hero h1,
+    .hero-tagline,
+    .hero .hero-text,
+    .hero-buttons {
+        margin-left: 0 !important;
+    }
+}
