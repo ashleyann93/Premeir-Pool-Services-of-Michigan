@@ -311,15 +311,15 @@ nav a:hover {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 18px;
 }
 
 .service-card {
     background: #111111;
     color: #ffffff;
-    padding: 38px 30px;
+    padding: 28px 30px;
     border-top: 6px solid #58b8ee;
-    min-height: 280px;
+    min-height: 220px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
 }
