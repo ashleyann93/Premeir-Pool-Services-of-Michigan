@@ -1879,3 +1879,36 @@ nav a {
         font-size: 0.78rem;
     }
 }
+/* =========================================
+   FINAL HERO REFINEMENTS
+   ========================================= */
+
+@media (min-width: 801px) {
+    .hero {
+        min-height: 680px;
+        background-position: center center;
+    }
+
+    .hero-content {
+        max-width: 1180px;
+        padding-left: 45px;
+        padding-top: 90px;
+        padding-bottom: 75px;
+    }
+
+    .hero h1 {
+        max-width: 650px;
+        font-size: clamp(4.5rem, 7vw, 7rem);
+    }
+
+    .hero .hero-text {
+        max-width: 580px;
+        margin-top: 28px;
+        margin-bottom: 27px;
+    }
+
+    .hero-badge {
+        top: 70px;
+        right: 8%;
+    }
+}
