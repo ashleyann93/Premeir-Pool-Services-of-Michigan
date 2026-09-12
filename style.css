@@ -3060,3 +3060,45 @@ nav {
         min-height: 95px !important;
     }
 }
+/* =========================================================
+   MAKE HEADER LOGO MUCH LARGER
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+    header img,
+    .logo img,
+    .navbar img,
+    .navbar-brand img {
+        height: 150px !important;
+        width: auto !important;
+        max-height: none !important;
+        object-fit: contain;
+    }
+
+    header,
+    .navbar {
+        min-height: 155px !important;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    header img,
+    .logo img,
+    .navbar img,
+    .navbar-brand img {
+        height: 105px !important;
+        width: auto !important;
+        max-height: none !important;
+        object-fit: contain;
+    }
+
+    header,
+    .navbar {
+        min-height: 115px !important;
+    }
+}
