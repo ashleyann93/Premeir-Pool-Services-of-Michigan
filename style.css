@@ -1086,3 +1086,81 @@ nav a {
         line-height: 1.6;
     }
 }
+/* =========================================
+   CUSTOM SERVICES SECTION HEADING
+   ========================================= */
+
+.services-section {
+    position: relative;
+}
+
+/* Small turquoise accent above the heading */
+.services-section .section-heading::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #58b8ee;
+    margin: 0 auto 18px;
+}
+
+/* Section label */
+.services-section .section-kicker {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    color: #2d6f98;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* Main heading */
+.services-section .section-heading h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 auto 18px;
+}
+
+/* Description */
+.services-section .section-heading p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+/* Slightly tighter cards on desktop */
+@media (min-width: 801px) {
+    .services-section .service-grid {
+        margin-top: 42px;
+    }
+
+    .services-section .service-card {
+        padding-top: 32px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .services-section .section-heading::before {
+        width: 45px;
+        height: 3px;
+        margin-bottom: 15px;
+    }
+
+    .services-section .section-heading h2 {
+        font-size: 2.15rem;
+        line-height: 1.1;
+    }
+
+    .services-section .section-heading p {
+        line-height: 1.6;
+    }
+}
