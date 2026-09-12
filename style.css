@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
 
 /* =========================================
@@ -1910,5 +1911,375 @@ nav a {
     .hero-badge {
         top: 70px;
         right: 8%;
+    }
+}
+/* =========================================
+   HERO — MATCH REFERENCE DESIGN
+   ========================================= */
+
+.hero {
+    position: relative;
+    min-height: 680px;
+
+    background-image: url("HERO.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Dark cinematic fade */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 12, 20, 0.94) 0%,
+            rgba(2, 12, 20, 0.78) 27%,
+            rgba(2, 12, 20, 0.35) 55%,
+            rgba(2, 12, 20, 0.08) 100%
+        );
+}
+
+/* =========================================
+   TEXT PLACEMENT
+   ========================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding:
+        70px 45px
+        55px 55px;
+}
+
+/* Location line */
+
+.hero .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: "Anton", Impact, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 400;
+
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.hero .eyebrow::before {
+    content: "";
+
+    width: 38px;
+    height: 3px;
+
+    background: #58d7f5;
+
+    flex-shrink: 0;
+}
+
+/* =========================================
+   MAIN HEADLINE
+   ========================================= */
+
+.hero h1 {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: "Anton", Impact, sans-serif;
+
+    font-size: clamp(5rem, 8vw, 7.8rem);
+
+    font-weight: 400;
+
+    line-height: 0.82;
+
+    letter-spacing: 0.005em;
+
+    text-transform: uppercase;
+
+    color: #f7f1df;
+
+    text-shadow:
+        3px 4px 0 rgba(0, 0, 0, 0.25),
+        0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* POOL CARE */
+
+.hero h1 span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #58d7f5;
+}
+
+/* =========================================
+   DONE RIGHT — SCRIPT
+   ========================================= */
+
+.hero h1 em,
+.hero h1 .script,
+.hero h1 i {
+    font-family: "Satisfy", cursive;
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: none;
+
+    color: #f7f1df;
+}
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.hero .hero-text {
+    max-width: 590px;
+
+    margin: 27px 0 25px;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1rem;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+
+    text-shadow:
+        1px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    min-height: 58px;
+
+    padding: 16px 27px;
+
+    font-family: "Anton", Impact, sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 400;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+
+    transition: 0.25s ease;
+}
+
+/* FREE ESTIMATE */
+
+.hero-buttons .btn-primary {
+    background: #58d7f5;
+
+    color: #07141d;
+
+    border: 2px solid #58d7f5;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* CALL */
+
+.hero-buttons .btn-secondary {
+    background: rgba(3, 13, 20, 0.45);
+
+    color: #ffffff;
+
+    border: 2px solid #58d7f5;
+}
+
+/* =========================================
+   BADGE
+   ========================================= */
+
+.hero-badge {
+    position: absolute;
+
+    top: 65px;
+    right: 7%;
+
+    z-index: 6;
+
+    width: 150px;
+    height: 150px;
+
+    border: 3px solid #f7f1df;
+
+    border-radius: 50%;
+
+    background: rgba(3, 13, 20, 0.70);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: #f7f1df;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 5px rgba(88, 215, 245, 0.12);
+}
+
+.hero-badge strong {
+    margin: 7px 0;
+
+    color: #58d7f5;
+
+    font-family: "Anton", Impact, sans-serif;
+
+    font-size: 1.25rem;
+
+    letter-spacing: 0.08em;
+}
+
+.hero-badge span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.56rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 760px;
+
+        background-position: 66% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(2, 12, 20, 0.96) 0%,
+                rgba(2, 12, 20, 0.84) 48%,
+                rgba(2, 12, 20, 0.42) 100%
+            );
+    }
+
+    .hero-content {
+        padding: 105px 25px 65px;
+    }
+
+    .hero .eyebrow {
+        margin-bottom: 22px;
+
+        font-size: 0.64rem;
+
+        letter-spacing: 0.10em;
+    }
+
+    .hero .eyebrow::before {
+        width: 27px;
+        height: 2px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(4rem, 17vw, 5.7rem);
+
+        line-height: 0.84;
+    }
+
+    .hero h1 span {
+        margin-top: 6px;
+    }
+
+    .hero .hero-text {
+        margin-top: 27px;
+
+        font-size: 0.96rem;
+
+        line-height: 1.55;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-badge {
+        top: 22px;
+        right: 18px;
+
+        width: 94px;
+        height: 94px;
+
+        border-width: 2px;
+    }
+
+    .hero-badge strong {
+        margin: 4px 0;
+
+        font-size: 0.76rem;
+    }
+
+    .hero-badge span {
+        font-size: 0.34rem;
     }
 }
