@@ -66,11 +66,53 @@ img {
 /* ---------- NAVIGATION ---------- */
 
 .navbar {
-    background: var(--white);
-    border-bottom: 4px solid var(--blue);
+    background: #080808;
+    border-bottom: 4px solid #22b8d6;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.nav-container {
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 145px;
+    height: 82px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 145px;
+    height: 82px;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #22b8d6;
 }
 
 .nav-container {
