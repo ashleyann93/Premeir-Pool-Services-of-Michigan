@@ -473,3 +473,66 @@ nav a:hover {
         font-size: 1.6rem;
     }
 }
+/* CONTACT / GET STARTED */
+
+.contact {
+    background: #f4f6f7;
+    padding: 75px 20px;
+    text-align: center;
+    border-top: 4px solid #58b8ee;
+}
+
+.contact .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contact .section-label {
+    margin-bottom: 10px;
+    color: #2d6f98;
+}
+
+.contact h2 {
+    margin: 0 0 18px;
+    font-size: 2.6rem;
+    line-height: 1.15;
+    color: #111111;
+}
+
+.contact p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #444444;
+    line-height: 1.7;
+}
+
+.contact .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.contact .btn {
+    min-width: 180px;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
