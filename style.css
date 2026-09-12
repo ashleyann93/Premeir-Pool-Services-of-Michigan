@@ -1164,3 +1164,348 @@ nav a {
         line-height: 1.6;
     }
 }
+/* =========================================
+   PREMIER CUSTOM HERO
+   ========================================= */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark cinematic overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 10, 14, 0.96) 0%,
+            rgba(5, 10, 14, 0.82) 42%,
+            rgba(5, 10, 14, 0.38) 75%,
+            rgba(5, 10, 14, 0.25) 100%
+        );
+    z-index: 1;
+}
+
+/* Main content */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 100px 40px 150px;
+    box-sizing: border-box;
+}
+
+/* Location line */
+.hero .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 22px;
+    color: #f4eee2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+/* Little turquoise line */
+.hero .eyebrow::after {
+    content: "";
+    width: 65px;
+    height: 3px;
+    background: #58b8ee;
+}
+
+/* Main headline */
+.hero h1 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(4rem, 7vw, 7rem);
+    font-weight: 700;
+    line-height: 0.88;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #f4eee2;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Blue part */
+.hero h1 span {
+    color: #58b8ee;
+}
+
+/* Handwritten-style tagline */
+.hero-tagline {
+    margin-top: 8px;
+    color: #f4eee2;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.03em;
+}
+
+/* Description */
+.hero-text {
+    max-width: 620px;
+    margin: 28px 0 30px;
+    color: #f4eee2;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.hero-buttons .btn {
+    min-height: 52px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+/* Primary */
+.hero-buttons .btn-primary {
+    background: #58b8ee;
+    border: 2px solid #58b8ee;
+    color: #071017;
+}
+
+/* Arrow */
+.hero-buttons .arrow {
+    margin-left: 12px;
+    font-size: 1.3rem;
+}
+
+/* Secondary */
+.hero-buttons .btn-secondary {
+    background: rgba(5, 10, 14, 0.45);
+    border: 2px solid #58b8ee;
+    color: #ffffff;
+}
+
+/* Hover */
+.hero-buttons .btn:hover {
+    background: #f4eee2;
+    border-color: #f4eee2;
+    color: #071017;
+}
+
+
+/* =========================================
+   HERO BADGE
+   ========================================= */
+
+.hero-badge {
+    position: absolute;
+    z-index: 4;
+    top: 95px;
+    right: 7%;
+    width: 145px;
+    height: 145px;
+    border: 3px solid #f4eee2;
+    border-radius: 50%;
+    background: rgba(7, 16, 23, 0.72);
+    color: #f4eee2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(6deg);
+    box-sizing: border-box;
+}
+
+.hero-badge span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.hero-badge strong {
+    margin: 5px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    color: #58b8ee;
+}
+
+.hero-badge small {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   HERO SERVICE STRIP
+   ========================================= */
+
+.hero-services {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 92px;
+    padding: 18px 40px;
+    background: rgba(5, 10, 14, 0.9);
+    border-top: 2px solid #58b8ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.hero-service {
+    min-width: 220px;
+    padding: 0 35px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 14px;
+    align-items: center;
+    border-right: 1px solid rgba(244, 238, 226, 0.35);
+}
+
+.hero-service:last-child {
+    border-right: none;
+}
+
+.hero-service-icon {
+    grid-row: span 2;
+    color: #58b8ee;
+    font-size: 1.8rem;
+}
+
+.hero-service strong {
+    color: #f4eee2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.hero-service small {
+    color: #58b8ee;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+}
+
+
+/* =========================================
+   HERO MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(5, 10, 14, 0.78) 0%,
+                rgba(5, 10, 14, 0.88) 60%,
+                rgba(5, 10, 14, 0.96) 100%
+            );
+    }
+
+    .hero-content {
+        padding: 75px 24px 145px;
+    }
+
+    .hero .eyebrow {
+        font-size: 0.72rem;
+        line-height: 1.4;
+        letter-spacing: 0.14em;
+        max-width: 300px;
+    }
+
+    .hero .eyebrow::after {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        line-height: 0.9;
+    }
+
+    .hero-tagline {
+        font-size: 1.7rem;
+        margin-top: 10px;
+    }
+
+    .hero-text {
+        font-size: 0.98rem;
+        line-height: 1.6;
+        margin: 24px 0;
+    }
+
+    .hero-badge {
+        display: none;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .hero-services {
+        min-height: 115px;
+        padding: 12px 10px;
+    }
+
+    .hero-service {
+        min-width: 0;
+        width: 33.333%;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-right: 1px solid rgba(244, 238, 226, 0.25);
+    }
+
+    .hero-service-icon {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-service strong {
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+    }
+
+    .hero-service small {
+        font-size: 0.55rem;
+        letter-spacing: 0.08em;
+    }
+}
