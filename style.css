@@ -868,3 +868,31 @@ footer {
         box-sizing: border-box;
     }
 }
+@media (max-width: 800px) {
+
+    .hero-content {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .hero-buttons {
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .hero-buttons .btn-secondary {
+        border: 2px solid #58b8ee;
+        background: transparent;
+        color: #ffffff;
+    }
+
+}
