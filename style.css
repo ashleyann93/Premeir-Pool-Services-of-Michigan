@@ -2762,3 +2762,99 @@ nav {
         font-size: 1.05rem;
     }
 }
+/* =========================================================
+   FINAL SERVICE BAR POSITION FIX
+   ========================================================= */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-services {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin-top: auto !important;
+
+    display: flex !important;
+    align-items: stretch;
+    justify-content: center;
+
+    background: rgba(3, 13, 21, 0.97);
+
+    z-index: 20;
+}
+
+
+/* Keep the four service sections evenly spaced */
+
+.hero-service {
+    flex: 1 1 25% !important;
+    max-width: none !important;
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Fourth section */
+
+.hero-services::after {
+    flex: 1 1 25% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+}
+
+
+/* Desktop hero height */
+
+@media (min-width: 801px) {
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-services {
+        min-height: 82px;
+        flex-shrink: 0;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 780px;
+    }
+
+    .hero-services {
+        flex-wrap: wrap;
+    }
+
+    .hero-service {
+        flex: 1 1 50% !important;
+        max-width: 50% !important;
+    }
+
+    .hero-services::after {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+}
