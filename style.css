@@ -2976,3 +2976,22 @@ nav {
         font-size: 3.3rem !important;
     }
 }
+/* =========================================================
+   MOVE HERO CONTENT FARTHER LEFT
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+    .hero-content {
+        padding-left: 10px !important;
+        margin-left: 0 !important;
+    }
+
+    .hero h1,
+    .hero-tagline,
+    .hero .eyebrow,
+    .hero .hero-text,
+    .hero-buttons {
+        margin-left: 0 !important;
+    }
+}
