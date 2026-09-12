@@ -2310,3 +2310,23 @@ nav a {
         font-size: clamp(2.8rem, 12vw, 4rem);
     }
 }
+@media (min-width: 801px) {
+    .hero h1 {
+        line-height: 0.78;
+    }
+
+    .hero h1 span {
+        margin-top: 2px;
+    }
+
+    .hero-tagline {
+        margin-top: 4px;
+        margin-bottom: 18px;
+        font-size: clamp(3.5rem, 5vw, 5rem);
+        line-height: 0.9;
+    }
+
+    .hero .hero-text {
+        margin-top: 0;
+    }
+}
