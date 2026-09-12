@@ -2358,39 +2358,173 @@ nav a {
         margin-top: 4px;
     }
 }
-<div class="hero-content">
+/* ===== REFERENCE HERO DESIGN ===== */
 
-    <p class="eyebrow">
-        HOWELL, MICHIGAN &amp; SURROUNDING AREAS
-    </p>
+.hero {
+    min-height: 700px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
 
-    <h1>
-        Reliable
-        <br>
-        <span>Pool Care.</span>
-    </h1>
+.hero-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 11, 18, 0.96) 0%,
+            rgba(2, 11, 18, 0.86) 28%,
+            rgba(2, 11, 18, 0.45) 53%,
+            rgba(2, 11, 18, 0.08) 100%
+        );
+}
 
-    <div class="hero-tagline">
-        Done Right.
-    </div>
+.hero-content {
+    max-width: 1280px;
+    padding: 65px 45px 60px 60px;
+    position: relative;
+    z-index: 5;
+}
 
-    <p class="hero-text">
-        Family-owned and proudly serving Howell, Michigan
-        and surrounding areas with dependable pool care since 2019.
-    </p>
+.hero .eyebrow {
+    margin-bottom: 18px;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+}
 
-    <div class="hero-buttons">
+.hero h1 {
+    max-width: 700px;
+    font-size: clamp(5.2rem, 8vw, 8.2rem);
+    line-height: 0.78;
+    letter-spacing: -0.01em;
+}
 
-        <a href="#contact" class="btn btn-primary">
-            Request a Free Estimate
-            <span class="arrow">→</span>
-        </a>
+.hero h1 span {
+    margin-top: 4px;
+}
 
-        <a href="tel:8105882205" class="btn btn-secondary">
-            <span class="phone-icon">☎</span>
-            Call 810-588-2205
-        </a>
+.hero-tagline {
+    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 22px;
+    font-family: "Satisfy", cursive;
+    font-size: clamp(4rem, 5.7vw, 5.8rem);
+    line-height: 0.88;
+    color: #f7f1df;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    text-shadow:
+        2px 3px 0 rgba(0,0,0,.25),
+        0 7px 18px rgba(0,0,0,.4);
+}
 
-    </div>
+.hero-tagline::after {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 6px;
+    margin-top: 7px;
+    background: #58d7f5;
+    transform: skewX(-25deg);
+}
 
-</div>
+.hero .hero-text {
+    max-width: 610px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.hero-buttons {
+    gap: 18px;
+}
+
+.hero-buttons .btn {
+    min-height: 60px;
+    padding: 16px 28px;
+}
+
+.hero-badge {
+    top: 115px;
+    right: 8%;
+    width: 155px;
+    height: 155px;
+}
+
+/* Turquoise brush-stroke */
+
+.hero-brush {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    width: 330px;
+    height: 105px;
+    background: #58d7f5;
+    clip-path: polygon(
+        7% 12%,
+        100% 0,
+        96% 82%,
+        12% 100%,
+        0 76%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-2deg);
+}
+
+.hero-brush span {
+    color: #07141d;
+    font-family: "Satisfy", cursive;
+    font-size: 1.9rem;
+    line-height: 1;
+    text-align: center;
+    transform: rotate(-2deg);
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 780px;
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        padding: 115px 24px 60px;
+    }
+
+    .hero h1 {
+        font-size: clamp(4rem, 17vw, 5.7rem);
+    }
+
+    .hero-tagline {
+        font-size: clamp(3.1rem, 13vw, 4.4rem);
+        margin-top: 7px;
+        margin-bottom: 18px;
+    }
+
+    .hero-tagline::after {
+        width: 185px;
+        height: 4px;
+    }
+
+    .hero-brush {
+        width: 190px;
+        height: 75px;
+    }
+
+    .hero-brush span {
+        font-size: 1.15rem;
+    }
+
+    .hero-badge {
+        top: 85px;
+        right: 18px;
+        width: 92px;
+        height: 92px;
+    }
+}
